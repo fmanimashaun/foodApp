@@ -1,0 +1,9 @@
+/* import fonts */
+
+/* Overpass */
+@font-face {
+  font-family: 'Overpass';
+  src: url("../fonts/Overpass/Overpass-VariableFont_wght.ttf") format('TrueType');
+}
+
+$primary-ff: 'Overpass', sans-serif;
