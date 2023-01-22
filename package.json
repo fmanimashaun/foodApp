@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git+https://github.com/fmanimashaun/foodapp.git"
+    "url": "git+git+https://github.com/fmanimashaun/foodApp.git"
   },
   "keywords": [],
   "author": "Engr. Animashaun Fisayo Michael",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fmanimashaun/foodapp/issues"
+    "url": "https://github.com/fmanimashaun/foodApp/issues"
   },
-  "homepage": "https://github.com/fmanimashaun/foodapp#readme",
+  "homepage": "https://github.com/fmanimashaun/foodApp#readme",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/plugin-transform-modules-commonjs": "^7.19.6",

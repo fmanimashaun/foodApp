@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/fmanimashaun/foodapp)
-- [Live Site URL](https://fmanimashaun.github.io/foodapp)
+- [Solution URL](https://github.com/fmanimashaun/foodApp)
+- [Live Site URL](https://fmanimashaun.github.io/foodApp/)
 
 ## My process
 
