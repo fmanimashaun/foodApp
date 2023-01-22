@@ -1,7 +1,4 @@
-// Get the menu container from DOM
-const menuContainer = document.querySelector('.app__body-menu');
-
-const renderMenu = async (arr) => {
+const renderMenu = async (arr, location) => {
   // Generate the internal HTML for the menu container
   const menuHTML = await Promise.all(arr.map(async (item) => {
     // Import the image for the menu item
@@ -25,8 +22,8 @@ const renderMenu = async (arr) => {
     `;
   }));
 
-  // Render the menu container
-  menuContainer.innerHTML = menuHTML.join('');
+  // return innerHTML for the menu container
+  location.insertAdjacentHTML('afterbegin', menuHTML.join(''));
 };
 
 export default renderMenu;
