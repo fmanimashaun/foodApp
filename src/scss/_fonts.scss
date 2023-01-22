@@ -1,9 +1,16 @@
 /* import fonts */
 
-/* Overpass */
+/* Smythe */
 @font-face {
-  font-family: 'Overpass';
-  src: url("../fonts/Overpass/Overpass-VariableFont_wght.ttf") format('TrueType');
+  font-family: 'Smythe';
+  src: url("../fonts/Smythe/Smythe-Regular.ttf") format('TrueType');
 }
 
-$primary-ff: 'Overpass', sans-serif;
+/* inter */
+@font-face {
+  font-family: 'inter';
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format('TrueType');
+}
+
+$primary-ff:'Smythe', cursive;
+$secondary-ff: 'Inter', sans-serif;

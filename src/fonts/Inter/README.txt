@@ -1,36 +1,27 @@
-Overpass Variable Font
-======================
+Inter Variable Font
+===================
 
-This download contains Overpass as both variable fonts and static fonts.
+This download contains Inter as both a variable font and static fonts.
 
-Overpass is a variable font with this axis:
+Inter is a variable font with these axes:
+  slnt
   wght
 
-This means all the styles are contained in these files:
-  Overpass-VariableFont_wght.ttf
-  Overpass-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Inter-VariableFont_slnt,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Overpass:
-  static/Overpass-Thin.ttf
-  static/Overpass-ExtraLight.ttf
-  static/Overpass-Light.ttf
-  static/Overpass-Regular.ttf
-  static/Overpass-Medium.ttf
-  static/Overpass-SemiBold.ttf
-  static/Overpass-Bold.ttf
-  static/Overpass-ExtraBold.ttf
-  static/Overpass-Black.ttf
-  static/Overpass-ThinItalic.ttf
-  static/Overpass-ExtraLightItalic.ttf
-  static/Overpass-LightItalic.ttf
-  static/Overpass-Italic.ttf
-  static/Overpass-MediumItalic.ttf
-  static/Overpass-SemiBoldItalic.ttf
-  static/Overpass-BoldItalic.ttf
-  static/Overpass-ExtraBoldItalic.ttf
-  static/Overpass-BlackItalic.ttf
+in those cases you can use the static font files for Inter:
+  static/Inter-Thin.ttf
+  static/Inter-ExtraLight.ttf
+  static/Inter-Light.ttf
+  static/Inter-Regular.ttf
+  static/Inter-Medium.ttf
+  static/Inter-SemiBold.ttf
+  static/Inter-Bold.ttf
+  static/Inter-ExtraBold.ttf
+  static/Inter-Black.ttf
 
 Get started
 -----------

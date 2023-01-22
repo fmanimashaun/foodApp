@@ -1,3 +1,112 @@
 /* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable csstree/validator */
 @use './_colors.scss';
+@use './_fonts.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+
+  &__header {
+    padding: 56px 46px;
+    background-image: url(../img/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    font-weight: 400;
+    color: colors.$white;
+
+    &-title {
+      font-size: 39px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    &-subtitle {
+      font-size: 22.4216px;
+      line-height: 14px;
+    }
+  }
+
+  &__body {
+    padding: 67px 46px 45px 46px;
+    font-weight: 400;
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 45px;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding-block-end: 51px;
+        border-block-end: 1px solid #d2d2d2;
+
+        &-info {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 31px;
+          width: fit-content;
+        }
+
+        &-img {
+          display: block;
+          width: 70px;
+          height: auto;
+        }
+
+        &-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 8px;
+        }
+
+        &-name {
+          font-weight: inherit;
+          font-size: 28px;
+          line-height: 17px;
+        }
+
+        &-desc {
+          font-weight: inherit;
+          font-size: 16px;
+          line-height: 24px;
+          color: colors.$gray;
+        }
+
+        &-price {
+          font-weight: inherit;
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        &-btn {
+          font-family: fonts.$secondary-ff;
+          font-weight: 200;
+          font-size: 32px;
+          line-height: 100%;
+          padding: 0;
+          border: 1.5px solid #dedede;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-block-start: 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
