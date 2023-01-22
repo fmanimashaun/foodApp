@@ -1,7 +1,3 @@
-// import pizzaImg from '../img/pizza.svg';
-// import burgerImg from '../img/burger.svg';
-// import beerImg from '../img/beer.svg';
-
 const menuArray = [
   {
     name: 'Pizza',
