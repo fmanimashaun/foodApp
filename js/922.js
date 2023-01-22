@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfoodapp=self.webpackChunkfoodapp||[]).push([[922],{922:(p,s,e)=>{p.exports=e.p+"img/pizza.svg"}}]);
