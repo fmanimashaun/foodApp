@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfoodapp=self.webpackChunkfoodapp||[]).push([[256],{256:(p,e,s)=>{p.exports=s.p+"img/bg-img.png"}}]);
