@@ -113,6 +113,10 @@
   &__footer {
     padding-inline: 46px;
 
+    &.hidden {
+      display: none;
+    }
+
     &-title {
       font-weight: inherit;
       font-size: 28px;
