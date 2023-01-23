@@ -7,11 +7,11 @@ const renderOrders = async () => {
     let total = 0;
     let orderItemsHtml = '';
 
-    order.forEach((orderItem) => {
+    order.forEach((orderItem, index) => {
       total += orderItem.price;
       orderItemsHtml += `
         <div class="app__footer-order-item">
-          <p class="app__footer-order-item-name">${orderItem.name}<button class="app__footer-order-item-btn">remove</button></p>
+          <p class="app__footer-order-item-name">${orderItem.name}<button class="app__footer-order-item-btn" data-remove-order=${index}>remove</button></p>
           <p class="app__footer-order-item-price">$${orderItem.price}</p>
         </div>
       `;
@@ -31,6 +31,8 @@ const renderOrders = async () => {
 
     // return innerHTML for the order container
     orderContainer.innerHTML = orderHtml;
+  } else {
+    orderContainer.innerHTML = '';
   }
 };
 
