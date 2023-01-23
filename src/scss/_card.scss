@@ -8,11 +8,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin-inline: auto;
 
   &__header {
-    padding: 56px 46px;
+    padding: 3.5rem 2.875rem;
     background-image: url(../img/bg-img.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -21,26 +21,26 @@
     color: colors.$white;
 
     &-title {
-      font-size: 39px;
-      line-height: 24px;
-      margin-bottom: 16px;
+      font-size: 2.4375rem;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     &-subtitle {
-      font-size: 22.4216px;
-      line-height: 14px;
+      font-size: 1.4014rem;
+      line-height: 0.875rem;
     }
   }
 
   &__body {
-    padding: 67px 46px 45px 46px;
+    padding: 4.1875rem 2.875rem 2.8125rem 2.875rem;
     font-weight: 400;
 
     &-menu {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 45px;
+      gap: 2.8125rem;
 
       &-item {
         display: flex;
@@ -48,21 +48,21 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-        padding-block-end: 51px;
-        border-block-end: 1px solid #d2d2d2;
+        padding-block-end: 3.1875rem;
+        border-block-end: 0.0625rem solid #d2d2d2;
 
         &-info {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          gap: 31px;
+          gap: 1.9375rem;
           width: fit-content;
         }
 
         &-img {
           display: block;
-          width: 70px;
+          width: 4.375rem;
           height: auto;
         }
 
@@ -71,37 +71,37 @@
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          gap: 8px;
+          gap: 0.5rem;
         }
 
         &-name {
           font-weight: inherit;
-          font-size: 28px;
-          line-height: 17px;
+          font-size: 1.75rem;
+          line-height: 1.0625rem;
         }
 
         &-desc {
           font-weight: inherit;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 1rem;
+          line-height: 1.5rem;
           color: colors.$gray;
         }
 
         &-price {
           font-weight: inherit;
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
         }
 
         &-btn {
           font-family: fonts.$secondary-ff;
           font-weight: 200;
-          font-size: 32px;
+          font-size: 2rem;
           line-height: 100%;
           padding: 0;
-          border: 1.5px solid #dedede;
-          width: 50px;
-          height: 50px;
+          border: 0.0938rem solid #dedede;
+          width: 3.125rem;
+          height: 3.125rem;
           border-radius: 50%;
           margin-block-start: 0.5rem;
           cursor: pointer;
@@ -111,17 +111,13 @@
   }
 
   &__footer {
-    padding-inline: 46px;
-
-    &.hidden {
-      display: none;
-    }
+    padding-inline: 2.875rem;
 
     &-title {
       font-weight: inherit;
-      font-size: 28px;
-      line-height: 17px;
-      margin-bottom: 64px;
+      font-size: 1.75rem;
+      line-height: 1.0625rem;
+      margin-bottom: 4rem;
       text-align: center;
     }
 
@@ -130,9 +126,9 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: 22px;
-      padding-block-end: 31px;
-      border-block-end: 2px solid #393333;
+      gap: 1.375rem;
+      padding-block-end: 1.9375rem;
+      border-block-end: 0.125rem solid #393333;
 
       &-item {
         display: flex;
@@ -140,8 +136,8 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        font-size: 28px;
-        line-height: 17px;
+        font-size: 1.75rem;
+        line-height: 1.0625rem;
 
         &-name {
           display: flex;
@@ -154,16 +150,16 @@
         &-btn {
           padding: 0;
           border: none;
-          margin-inline-start: 13px;
-          font-size: 12px;
-          line-height: 24px;
+          margin-inline-start: 0.8125rem;
+          font-size: 0.75rem;
+          line-height: 1.5rem;
           color: colors.$gray;
           cursor: pointer;
         }
 
         &-price {
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
         }
       }
 
@@ -173,35 +169,35 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        font-size: 28px;
-        line-height: 17px;
-        margin-block-start: 14px;
-        margin-block-end: 53px;
+        font-size: 1.75rem;
+        line-height: 1.0625rem;
+        margin-block-start: 0.875rem;
+        margin-block-end: 3.3125rem;
 
         &-name {
           font-weight: inherit;
         }
 
         &-price {
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
         }
       }
 
       &-btn {
         display: block;
         width: 100%;
-        padding: 16px 0;
-        margin-block-end: 53px;
+        padding: 1rem 0;
+        margin-block-end: 3.3125rem;
         font-family: fonts.$tertiary-ff;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         color: colors.$white;
         background-color: colors.$green;
         border: none;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        border-radius: 3px;
+        box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+        border-radius: 0.1875rem;
         cursor: pointer;
       }
     }
