@@ -109,4 +109,97 @@
       }
     }
   }
+
+  &__footer {
+    padding-inline: 46px;
+
+    &-title {
+      font-weight: inherit;
+      font-size: 28px;
+      line-height: 17px;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+
+    &-order {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+      padding-block-end: 31px;
+      border-block-end: 2px solid #393333;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 28px;
+        line-height: 17px;
+
+        &-name {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          font-weight: inherit;
+        }
+
+        &-btn {
+          padding: 0;
+          border: none;
+          margin-inline-start: 13px;
+          font-size: 12px;
+          line-height: 24px;
+          color: colors.$gray;
+          cursor: pointer;
+        }
+
+        &-price {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      &-total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 28px;
+        line-height: 17px;
+        margin-block-start: 14px;
+        margin-block-end: 53px;
+
+        &-name {
+          font-weight: inherit;
+        }
+
+        &-price {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      &-btn {
+        display: block;
+        width: 100%;
+        padding: 16px 0;
+        margin-block-end: 53px;
+        font-family: fonts.$tertiary-ff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: colors.$white;
+        background-color: colors.$green;
+        border: none;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
 }
