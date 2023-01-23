@@ -1,6 +1,10 @@
-const renderMenu = async (arr, location) => {
+import menuArray from './data.js';
+
+const renderMenu = async () => {
+  const menuContainer = document.querySelector('.app__body-menu');
+
   // Generate the internal HTML for the menu container
-  const menuHTML = await Promise.all(arr.map(async (item) => {
+  const menuHTML = await Promise.all(menuArray.map(async (item) => {
     // Import the image for the menu item
     const img = await import(`../img/${item.image}`);
 
@@ -15,7 +19,7 @@ const renderMenu = async (arr, location) => {
             <p class="app__body-menu-item-price">$${item.price}</p>
           </div>
         </div>
-        <button class="app__body-menu-item-btn" aria-label='add ${item.name} to cart at $${item.price} per unit'>
+        <button class="app__body-menu-item-btn" aria-label='add ${item.name} to cart at $${item.price} per unit' data-add-order=${item.id}>
           +
         </button>
       </div>
@@ -23,7 +27,7 @@ const renderMenu = async (arr, location) => {
   }));
 
   // return innerHTML for the menu container
-  location.insertAdjacentHTML('afterbegin', menuHTML.join(''));
+  menuContainer.insertAdjacentHTML('afterbegin', menuHTML.join(''));
 };
 
 export default renderMenu;
