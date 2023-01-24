@@ -33,8 +33,46 @@
   }
 
   &__body {
+    position: relative;
     padding: 4.1875rem 2.875rem 2.8125rem 2.875rem;
     font-weight: 400;
+
+    &-payment {
+      position: absolute;
+      inset-block-start: 58px;
+      inset-inline-start: 38px;
+      inset-inline-end: 38px;
+      border: 1px solid red;
+      background-color: colors.$white;
+      filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+
+      &-title {
+        font-family: fonts.$tertiary-ff;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        margin-block-end: 46px;
+      }
+
+      &-form {
+        padding-inline: 24px;
+
+        &>* {
+          width: 100%;
+          margin-block-start: 24px;
+        }
+
+        &>*:first-child {
+          margin-block-start: 0;
+        }
+      }
+
+      &-submit {
+        width: 100%;
+        margin-block-start: 46px;
+      }
+    }
 
     &-menu {
       display: flex;
