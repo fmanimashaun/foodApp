@@ -1,5 +1,5 @@
 const renderpaymentForm = () => {
-  const appBody = document.querySelector('.app__body');
+  const appBodyMenu = document.querySelector('.app__body-menu');
 
   const order = JSON.parse(localStorage.getItem('order'));
 
@@ -20,7 +20,7 @@ const renderpaymentForm = () => {
     </div>
   `;
 
-  appBody.insertAdjacentHTML('afterbegin', formCardHtml);
+  appBodyMenu.insertAdjacentHTML('afterbegin', formCardHtml);
 };
 
 export default renderpaymentForm;
