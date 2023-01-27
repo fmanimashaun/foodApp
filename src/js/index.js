@@ -3,6 +3,7 @@ import renderMenu from './renderMenu.js';
 import addOrder from './addOrder.js';
 import renderOrders from './renderOrders.js';
 import removeOrder from './removeOrder.js';
+import paymentForm from './paymentForm.js';
 
 // checking localstorage before loading page
 if (localStorage.getItem('order')) {
@@ -23,5 +24,8 @@ document.addEventListener('click', (e) => {
   } else if (e.target.dataset.removeOrder) {
     const orderId = parseInt(e.target.dataset.removeOrder, 10);
     removeOrder(orderId);
+  } else if (e.target.dataset.submit === 'pay') {
+    // Render payment form
+    paymentForm();
   }
 });
