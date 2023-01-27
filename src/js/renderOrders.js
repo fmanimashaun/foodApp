@@ -26,7 +26,7 @@ const renderOrders = async () => {
         <p class="app__footer-order-total-title">Total price:</p>
         <p class="app__footer-order-total-price">$${total}</p>
       </div>
-      <button class="app__footer-order-btn">Complete order</button>
+      <button class="app__footer-order-btn" data-submit='pay'>Complete order</button>
     `;
 
     // return innerHTML for the order container
