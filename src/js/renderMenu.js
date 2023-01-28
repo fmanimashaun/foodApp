@@ -27,6 +27,7 @@ const renderMenu = async () => {
   }));
 
   // return innerHTML for the menu container
+  menuContainer.innerHTML = '';
   menuContainer.insertAdjacentHTML('afterbegin', menuHTML.join(''));
 };
 
