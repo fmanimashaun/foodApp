@@ -151,12 +151,12 @@
       &-form {
         padding: 0 24px 30px 24px;
 
-        &>* {
+        & > * {
           width: 100%;
           margin-block-start: 24px;
         }
 
-        &>*:first-child {
+        & > *:first-child {
           margin-block-start: 0;
         }
       }
