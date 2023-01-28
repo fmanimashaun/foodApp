@@ -1,13 +1,15 @@
 const renderOrders = async () => {
   const orderContainer = document.querySelector('.app__footer');
-  const order = localStorage.getItem('order') ? JSON.parse(localStorage.getItem('order')) : [];
+  const orderObj = localStorage.getItem('order') ? JSON.parse(localStorage.getItem('order')) : { complete: false, items: [] };
+
+  const itemsArr = orderObj.items;
 
   // Generate the internal HTML for the order items
-  if (order.length > 0) {
+  if (itemsArr.length > 0 && !orderObj.complete) {
     let total = 0;
     let orderItemsHtml = '';
 
-    order.forEach((orderItem, index) => {
+    itemsArr.forEach((orderItem, index) => {
       total += orderItem.price;
       orderItemsHtml += `
         <div class="app__footer-order-item">
@@ -31,6 +33,8 @@ const renderOrders = async () => {
 
     // return innerHTML for the order container
     orderContainer.innerHTML = orderHtml;
+  } else if (orderObj.complete) {
+    orderContainer.innerHTML = `<p class="app__footer-success-msg">Thanks, ${orderObj.customer}! Your order is on its way!</p>`;
   } else {
     orderContainer.innerHTML = '';
   }

@@ -1,11 +1,14 @@
 import IMG from '../img/close.svg';
+import formListener from './formListener.js';
 
 const renderpaymentForm = () => {
   const appBodyMenu = document.querySelector('.app__body-menu');
 
-  const order = JSON.parse(localStorage.getItem('order'));
+  const orderObj = JSON.parse(localStorage.getItem('order'));
 
-  const totalPrice = order.reduce((acc, item) => acc + item.price, 0);
+  const orderArr = orderObj.items;
+
+  const totalPrice = orderArr.reduce((acc, item) => acc + item.price, 0);
 
   const formCardHtml = `
      <div class="app__body-payment">
@@ -15,11 +18,13 @@ const renderpaymentForm = () => {
         </div>
 
         <form class="app__body-payment-form">
-          <input class="app__body-payment-input" type="text" name="card-name" id="card-name"
+          <input class="app__body-payment-input" type="text" name="CardName" id="card-name"
                   aria-label='enter your name' placeholder='Enter your name' required>
-          <input class="app__body-payment-input" type="text" inputmode="numeric" name="card-numner"
+          
+          <input class="app__body-payment-input" type="text" maxlength="16" pattern="[0-9]*" inputmode="numeric" name="cardNumner"
                   id="card-number" aria-label='Enter card number' placeholder='Enter card number' required>
-          <input class="app__body-payment-input" type="text" inputmode="numeric" name="card-cvv" id="card-cvv"
+          
+          <input class="app__body-payment-input" type="text" maxlength="3" inputmode="numeric" name="cardCvv" id="card-cvv"
                   aria-label='Enter cvv' placeholder='Enter CVV' required>
           <input class="app__body-payment-submit" type="submit" value='Pay' data-submit-order="${totalPrice}">
         </form>
@@ -27,6 +32,8 @@ const renderpaymentForm = () => {
   `;
 
   appBodyMenu.insertAdjacentHTML('afterbegin', formCardHtml);
+
+  formListener();
 };
 
 export default renderpaymentForm;

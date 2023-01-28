@@ -29,7 +29,8 @@ document.addEventListener('click', (e) => {
     // Render payment form
     paymentForm();
   } else if (e.target.classList.contains('app__body-payment-close-btn')) {
-    console.log(e.target.dataset.closeBtn);
+    completeorCloseForm(e);
+  } else if (e.target.dataset.submitOrder) {
     completeorCloseForm(e);
   }
 });

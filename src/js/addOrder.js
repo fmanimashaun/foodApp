@@ -2,10 +2,12 @@ import menuArray from './data.js';
 import renderOrders from './renderOrders.js';
 
 const addOrder = (itemId) => {
-  const orderItems = localStorage.getItem('order') ? JSON.parse(localStorage.getItem('order')) : [];
+  const orderObj = localStorage.getItem('order') ? JSON.parse(localStorage.getItem('order')) : { complete: false, items: [] };
   const orderItem = menuArray.find((item) => item.id === itemId);
-  orderItems.push(orderItem);
-  localStorage.setItem('order', JSON.stringify(orderItems));
+  const itemsArr = orderObj.items;
+  itemsArr.push(orderItem);
+  orderObj.items = itemsArr;
+  localStorage.setItem('order', JSON.stringify(orderObj));
   renderOrders();
 };
 
