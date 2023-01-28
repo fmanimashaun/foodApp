@@ -4,6 +4,7 @@ import addOrder from './addOrder.js';
 import renderOrders from './renderOrders.js';
 import removeOrder from './removeOrder.js';
 import paymentForm from './paymentForm.js';
+import completeorCloseForm from './completeOrCloseForm.js';
 
 // checking localstorage before loading page
 if (localStorage.getItem('order')) {
@@ -27,5 +28,8 @@ document.addEventListener('click', (e) => {
   } else if (e.target.dataset.submit === 'pay') {
     // Render payment form
     paymentForm();
+  } else if (e.target.classList.contains('app__body-payment-close-btn')) {
+    console.log(e.target.dataset.closeBtn);
+    completeorCloseForm(e);
   }
 });
