@@ -118,6 +118,27 @@
       border-radius: 3.88991px;
       filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
 
+      &-header {
+        position: relative;
+      }
+
+      &-close-btn {
+        position: absolute;
+        inset-block-start: -36px;
+        inset-inline-end: 10px;
+        padding: 0;
+        border: 1px solid colors.$gray;
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+
+        &-img {
+          display: block;
+          width: 20px;
+          height: auto;
+        }
+      }
+
       &-title {
         font-family: fonts.$tertiary-ff;
         font-weight: 700;
@@ -167,6 +188,7 @@
         background: colors.$green;
         border-radius: 3.88991px;
         border: none;
+        cursor: pointer;
       }
     }
   }
@@ -180,6 +202,16 @@
       line-height: 1.0625rem;
       margin-bottom: 4rem;
       text-align: center;
+    }
+
+    &-success-msg {
+      font-weight: inherit;
+      font-size: 32px;
+      line-height: 17px;
+      text-align: center;
+      padding-block: 52px;
+      color: colors.$dark-green;
+      background-color: colors.$light-green;
     }
 
     &-order {
