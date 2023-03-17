@@ -1,5 +1,5 @@
 {
-  "name": "learning-journal",
+  "name": "foodapp",
   "version": "1.0.0",
   "description": "The project was built to showcase my skills in HTML, CSS, and JavaScript by building a food ordering app based on the [Figma](https://www.figma.com/file/mJyp4LkSPFc3DUtoHBehHf/Mobile-Restaurant-Menu-(Copy)) design. This is part of the Scrimba Frontend Developer Career Path solo projects.",
   "private": true,
